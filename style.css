@@ -265,14 +265,89 @@ nav {
     font-weight: 400;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: #131921;
-    padding: 20px 60px;
-}
+
+footer{
+    background-color: #131A22;
+        margin-top: 15px;
+    }
+    .foot-panel1{
+        background-color: #37475a;
+        color:white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.85rem;
+    }
+    .foot-panel1:hover{
+        background-color: #131A22;
+        transition: 0.5s;
+    }
+    .foot-panel2{
+        background-color: #222f3d;
+        color:white;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    ul{
+        margin-top: 20px;
+    }
+    ul a{
+        display: block;
+        font-size: 0.85rem;
+        margin-top: 10px;
+        color:#dddddd
+    }
+    .foot-panel3{
+        
+        background-color: #222f3d;
+        color: white;
+        border-top: 0.1px solid rgb(61, 59, 59);
+        height:70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .logos{
+        background-image: url("/assets/amazon_logo.png");
+        background-size: cover;
+        height: 50px;
+        width:150px;
+        mix-blend-mode:lighten;
+  
+    }
+    .foot-panel4{
+        background-color:#131A22;
+        color:white;
+        text-align: center;
+        font-size: 0.85rem;
+        height:100px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    table{
+        margin: 0 auto;
+        padding:2rem 0;
+        background-color: #131A22;
+        color:white
+       
+
+    }
+    .navfoot{
+        padding:0 2rem;
+    }
+    .navfoot h6{
+        font-size:16px;
+        font-weight: 500;
+    }
+    .navfoot p{
+        font-size:13px;
+    }
 
 /* ---------- media query ----------- */
 
@@ -334,9 +409,47 @@ footer {
         max-width: 100%;
         width: 100%;
     }
-    footer{
-        justify-content: center;
-        flex-direction: column;
-        font-size: 14px;
+    .pages a{
+        padding: 0 0.5rem 0 0;
+        font-size: 11px;
     }
+  
+    .copyright{
+        font-size: 11px;
+       
+    }
+    .foot-panel2{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        font-size: 15px;
+        height: auto;
+        
+    }
+    .foot-panel4{
+        height:10vh;
+        border-top: 0.1px solid rgb(30, 28, 33);
+    }   
+     footer{
+        line-height: 80v;
+    }
+    .foot-panel2 a{
+        margin-top: 0.1px;
+    }
+    table{
+        padding:1rem 0 1rem 0;
+    }
+    table tr{
+        display: grid;
+        grid-template-columns: 160px 160px;
+        grid-gap: 1rem 0;
+    }
+    .navfoot h6{
+        font-size: 13px;
+    }
+    .navfoot p{
+        font-size: 10px;
+        font-weight: 200;
+        font: 200;
+    }
+    
 }
